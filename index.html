@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta nam="viewport" content="with= device-width, initial scale=1.0">
+    <title>Chora Website Design</title>
+    
+</head>
+<link rel="stylesheet" href="style.css">
+
+<style>
+       /* CSS Reset */
+      *{
+           margin: 0px;
+           padding: 0px;
+           font-family:
+       } 
+       .header{
+           min-height: 50;
+           width: 100%;
+           background: url("c:\\Users\\degea\\Downloads\\Telegram Desktop\\photo_2023-10-27_23-37-03.jpg");
+           background-position: center;
+           background-size: cover;
+           position: relative;
+           
+       }
+       nav{
+           display: flex;
+           padding: 2% 6%;
+           justify-content: center;
+           
+       }
+       nav img{
+           width: 150px;
+           
+       }
+       .nav-links{
+           flex: 1;
+           text-align: right;
+           
+       }
+       .nav-links ul li{
+           list-style: none;
+           display: inline-block;
+           padding: 8px 12px;
+           position: relative;
+           
+       }
+       .nav-links ul li a{
+           color: #fff;
+           textdecoration: none;
+           font-size: 13px;
+       }
+       .nav-links ul:: after{
+           content: "";
+           width: 100%;
+           height: 2px;
+           background: #f44336;
+           display: block;
+           margin: auto;
+           transition: 0.5s;
+                      
+       }
+       .nav-links ul li: hover:: after{
+           width: 100%;
+           
+       }
+       .text-box{
+          
+           width: 90%;
+           color: #fff;
+           position: aboslute;
+           top: 50%;
+           left: 50%;
+           transform: translate(-50%, -50%)
+           text-align: center;
+         
+       }
+       .text-box h1{
+           font-size: 62px;
+       }
+       .text-box p{
+           margin: 10px 0 40px;
+           font-size: 20px;
+           color: #fff;
+           
+       }
+       .hero-btn{
+           display: inline-block;
+           text-decoration: none;
+           color: #fff;
+           border: 12px solid #fff;
+           padding: 12px 34px;
+           font-size: 13px;
+           background: transparent;
+           position: relative;
+           cursor: pointer;
+           
+       }.
+       hero-btn: hover{
+           border: 1px solid #f44336;
+           background: #f44336;
+           transition: 1s;
+           
+       }
+       @media(max-width: 700px){
+           text-box h1{
+               font-size: 20px;
+                              
+           }
+           .nav-links ul li{
+               display: block;
+           }
+           .nav-links{
+               position: absolute;
+               background: #f44336;
+               height: 100vh;
+               width: 200px;
+               top: 0;
+               right: 0;
+               text-align: left;
+               z-index: 2;
+               
+           }
+           .nav.fa{
+               display: block;
+               color: #fff;
+               margin: 10px;
+               font-size: 20px;
+               cursor: pointer;
+               
+           }
+           .nav.links ul{
+               padding: 30px;
+           }
+     
+       }
+       .celebration{
+           width: 70%;
+           margin: auto;
+           text-align: center;
+           padding-top: 100px;
+           
+       }
+       .celebration-cd{
+           flex-basis: 31%;
+           border-radius: 10px;
+           margin-bottom: 5%;
+           text-align: left;
+           
+       }
+       .celebration-col img{
+           width: 400px;
+           border-radius: 10px;
+           
+       }
+       .celebration-col p{
+           padding: 0;
+           
+       }
+       .celebration-col h3{
+           width: 400px;
+           margin-top: 16px;
+           margin-bottom;
+           text-align: left;
+       }
+         
+</style>
+<body>
+<section class="header">
+    <nav>
+       
+        <div class="nav-link" id="navlinks">
+            <i class="fa fa-times" onclick="hiddenMenu()"></i>
+            <ul>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">ABOUT US</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </navv>
+<div class="text-box">
+    <h1>Chora Comprehensive Secondary School</h1>
+    <p> Chora Comprehensive Secondary School is a prestigious institution dedicated to providing quality education to students, based around the Southern part of Ethiopia. Our school is known for its quality of education, high-scoring students, and outstanding performance on different examinations such as the Ethiopian University Entrance Examination. We produce students who excel in both academics and extracurricular activities</p>
+    <a href="" class="hero-btn">Visit Us To Know More</a>
+    
+</div>
+
+</section>
+<!-- Celebrations -->
+<section class="celebrations">
+    <h1>Different Celebrations that takesplace in our school</h1>
+    <p>Beside to our tireless effort to help our students with their academics, we also aspire for their development in all range. our students celebrate different festives which makes them more tolerant and observe the world from different perspective.</p>
+    <div class="row">
+        <div class=" celebration-col">         
+            <h3> Culture Day</h3>
+            <p>a picture showing our senior students celebrating culuture day, which is celebrated in national level.Ethiopia is contains more than 80 nations and nationalities.</p>
+             <img src="c:\Users\degea\Downloads\Telegram Desktop\photo_2023-10-27_23-36-52.jpg">
+            <img src="c:\Users\degea\Downloads\Telegram Desktop\photo_2023-10-27_23-36-49.jpg" alt="">
+           
+        </div>
+        <div class="celebrations-col">
+            
+            <h3>Colour Day</h3>
+            <p> Chora believes that students should grow not only in their academic life, but also in different aspects. And student's colour day is a good evidence for that. </p>
+            <img src="c:\Users\degea\Downloads\Telegram Desktop\photo_2023-10-27_23-36-38.jpg" alt="">
+            <img src="/storage/emulated/0/Pictures/facebook/1696541218209.jpg" alt="">
+            <h3> Chora Computer science and STEM Club</h3>
+            <p> Chora works very hard to help students who are interested in computer science and engineering. There students who developed several websites and applications in their junior high school.</p>
+       
+            <img src="c:\Users\degea\Downloads\Telegram Desktop\photo_2023-10-27_23-36-59.jpg" alt="">
+                   
+        </div>
+        
+    </div>
+</section>
+<!-- JavaScript for Toggle Menu -->
+<script>
+    var navlinks = document.getElementById("navlinks")
+    
+    function showMenu(){
+        navlinks.style.right="0";
+    }
+    function hideMenu(){
+        navlinks.style.right="-200px";
+    }
+</script>
+</body>
+</html>

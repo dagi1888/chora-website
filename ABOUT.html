@@ -1,0 +1,95 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Chora General Secondary School</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    } 
+    
+    header{    
+      color: #fff;      
+      padding: 20px;
+      
+      background-image: url("c:\\Users\\degea\\Downloads\\Telegram Desktop\\photo_2023-10-27_23-36-43.jpg");
+    
+    }
+    
+    main {
+      padding: 20px;
+    }
+    
+    h1 {
+      color: #333;
+    }
+    
+    p {
+      margin-bottom: 20px;
+    }
+    
+    .image {
+      width: 300px;
+      height: 200px;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome to Chora General Secondary School</h1>
+  </header>
+  
+  <main>
+    <h2>ABOUT US</h2>
+    <p>Chora General Secondary School is a prestigious institution dedicated to providing quality education to students, based around the Southern part of Ethiopia. Our school is known for its quality of education, high-scoring students, and outstanding performance on different examinations such as the Ethiopian University Entrance Examination. We produce students who excel in both academics and extracurricular activities.</p>
+    
+    <h2>Facilities</h2>
+    <p>Our school offers state-of-the-art facilities including:</p>
+    ++
+    <ul>
+      <li>Modern classrooms</li>
+      <li>Science laboratories</li>
+      <li>Library</li>
+      <li>Sports fields</li>
+      <li>Computer labs</li>
+    </ul>
+    
+    <h2>Events</h2>
+    <p>Stay updated with our upcoming events:</p>
+    <ul>
+      <li>Colour Day - Date: October 23</li>
+      <li>Culture Day - Date: December 8</li>
+    </ul>
+    
+    <h2>Gallery</h2>
+    <div id="image-container"></div>
+  </main>
+  
+  <script>
+    const imageContainer = document.getElementById("image-container");
+    
+    const images = [
+      "c:\\Users\\degea\\Downloads\\Telegram Desktop\\photo_2023-10-27_23-36-43.jpg",
+      "c:\\Users\\degea\\Downloads\\Telegram Desktop\\photo_2023-10-27_23-36-49.jpg",
+      "c:\\Users\\degea\\Downloads\\Telegram Desktop\\photo_2023-10-27_23-36-43.jpg",
+    ];
+    
+    function displayImages() {
+      for (let i = 0; i < images.length; i++) {
+        const image = document.createElement("img");
+        image.src = images[i];
+        image.alt = "Image " + (i + 1);
+        image.classList.add("image");
+        imageContainer.appendChild(image);
+      }
+    }
+    
+    displayImages();
+  </script>
+</body>
+</html>
